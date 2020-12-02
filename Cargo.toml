@@ -1,0 +1,29 @@
+[package]
+name = "chl"
+version = "0.1.0"
+authors = [
+  "Kevin Lewi <klewi@fb.com",
+  "Payman Mohassel <paymanm@fb.com>",
+  "Arnab Roy <arnabr@gmail.com>",
+]
+description = "An implementation of single-message credential-hiding login"
+license = "MIT"
+edition = "2018"
+readme = "README.md"
+
+[dependencies]
+miracl_core = "2.3.0"
+pairing = "0.15.1"
+rand_core = "0.5.1"
+group = "0.2.0"
+rand_xorshift = "0.2.0"
+ff = "0.5.2"
+sha2 = "0.8.0"
+digest = "0.8.1"
+
+[dev-dependencies]
+bencher = "0.1.5"
+
+[[bench]]
+name = "benchmarks"
+harness = false
